@@ -1,0 +1,46 @@
+{
+  "name": "speechmonkey",
+  "version": "0.0.0",
+  "description": "record and playback fx",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "mocha-phantomjs test/test.html"
+  },
+  "repository": "",
+  "author": "emanuelbsilva",
+  "license": "Proprietary",
+  "devDependencies": {
+    "bower": "~1.2.7",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-img": "~0.1.6",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-open": "~0.2.2",
+    "connect-livereload": "~0.2.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "coffee-script": "~1.6.3",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-throttle": "~0.1.0",
+    "grunt-usemin": "git://github.com/emanuelbsilva/grunt-usemin.git",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-ftpush": "~0.3.2",
+    "grunt-aws": "~0.2.5",
+    "grunt-contrib-less": "~0.8.3",
+    "chai": "~1.8.1",
+    "mocha-phantomjs": "~3.3.1",
+    "phantomjs": "~1.9.6-0",
+    "mocha": "~1.17.1"
+  },
+  "dependencies": {
+    "date-utils": "~1.2.15",
+    "async": "^0.2.10",
+    "knockout.app": "^0.2.5"
+  }
+}

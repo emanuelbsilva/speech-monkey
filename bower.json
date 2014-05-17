@@ -1,0 +1,25 @@
+{
+  "name": "speechmonkey",
+  "version": "0.0.0",
+  "main": "src/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "bootstrap": "~3.0.3",
+    "lodash": "~2.4.1",
+    "momentjs": "~2.5.1",
+    "knockout": "https://github.com/bowerjs/knockout.git#~3.0.0",
+    "jquery": "1.8.3",
+    "BootstrapModalPopover": "https://github.com/scruffles/BootstrapModalPopover.git",
+    "eventemitter2": "https://github.com/hij1nx/EventEmitter2.git#~0.4.13",
+    "x-editable": "~1.5.1",
+    "knockout.mapping": "~2.0.1"
+  },
+  "resolutions": {
+    "jquery": "~1.8.3"
+  }
+}

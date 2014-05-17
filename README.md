@@ -1,0 +1,1 @@
+Speech Monkey is a fun, interactive app that was developed as a learning process to scratch the surface of the HTML5 Web Audio API.

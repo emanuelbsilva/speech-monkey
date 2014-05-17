@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+      expect = chai.expect;
+    </script>
+    <!-- libs -->
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="../bower_components/momentjs/moment.js"></script>
+    <script src="../vendor/pt.js"></script>
+    <script src="../bower_components/knockout/knockout.js"></script>
+
+    <!-- fixtures -->
+    <script src="coffee-built/fixtures.js"></script>
+  
+    <!-- code -->
+    <script src="../src/coffee-built/koCalendar.js"></script>
+
+    <!-- tests -->
+    <script src="coffee-built/koCalendar.js"></script>
+
+    <script>
+      if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+      else { mocha.run(); }
+    </script>
+  </body>
+</html>

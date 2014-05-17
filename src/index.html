@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>speech monkey</title>
+  <meta name="description" content="Project description">
+  <meta name="og:image" content="thumbnail.png">
+
+
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="google" content="notranslate">
+
+  <!-- build:css css/app.css -->
+  <link href="css/reset.css" rel="stylesheet" text="text/css"/>
+  <link href="less-built/styles.css" rel="stylesheet" text="text/css"/>
+  <!-- endbuild -->
+
+  <!-- build:js modernizr.min.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+</head>
+<body>
+
+  <canvas></canvas>
+
+  <div data-bind="css: {hide: state() != 'init'}" class="idle">
+    <a href="#" data-bind="click: startRecord">Record</a>
+    <p>
+      Speech Monkey is a fun, interactive app that was developed as a learning process to scratch the surface of the HTML5 Web Audio API.
+    </p>
+  </div>
+  <div data-bind="css: {hide: state() != 'recording'}" class="recording">
+    <a href="#" data-bind="click: stopRecord">Stop</a>
+  </div>
+  <div class="fx" data-bind="css: {hide: state() != 'fx'}">
+    <a href="#" class="record-again" data-bind="click: startRecord">Record</a>
+    <div data-bind="foreach: fx">
+      <a class="play-fx" href="#" data-bind="click: play, text: name"></a>
+    </div>
+  </div>
+
+<!-- build:js app.js -->
+<script>var DEBUG = true;</script>
+
+<script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/lodash/dist/lodash.compat.js"></script>
+<script src="../node_modules/async/lib/async.js"></script>
+<script src="../bower_components/eventemitter2/lib/eventemitter2.js"></script>
+<script src="../bower_components/knockout/knockout.js"></script>
+<script src="../bower_components/knockout.mapping/build/knockout.mapping.js"></script>
+<script src="../node_modules/knockout.app/build/knockout.app.js"></script>
+
+<script src="coffee-built/contextClass.js"></script>
+<script src="coffee-built/animationFrameShim.js"></script>
+<script src="coffee-built/model.js"></script>
+<script src="coffee-built/visualiser.js"></script>
+<script src="coffee-built/recorder.js"></script>
+
+<!-- Fx's -->
+<script src="coffee-built/normal.js"></script>
+<script src="coffee-built/speedyGonzalez.js"></script>
+<script src="coffee-built/dubASlow.js"></script>
+<script src="coffee-built/reverse.js"></script>
+
+<script src="coffee-built/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
